@@ -6,14 +6,14 @@ const inconsolota = Inconsolata({
 
 type props ={
     text : string,
-    className : string,
+    className? : string,
 }
 
 export function SmallText({text,className}:props){
 
 
     return(
-        <h4 className={`${inconsolota.className} ${className} text-lg`} >{text}</h4>
+        <h1 className={`${inconsolota.className} ${className} text-lg lg:text-xl`} >{text}</h1>
     )
 }
 
@@ -21,6 +21,14 @@ export function LargeText({text,className}:props){
 
 
     return(
-        <h4 className={`${inconsolota.className} ${className} text-xl `} >{text}</h4>
+        <h2 className={`${inconsolota.className} ${className} font-bold text-xl md:text-2xl lg:text-3xl `} >{text}</h2>
+    )
+}
+
+export function SmallerText({text,className}:props){
+
+
+    return(
+        <p className={`${inconsolota.className} ${className}text-base md:text-lg lg:text-xl `} >{text}</p>
     )
 }

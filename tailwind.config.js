@@ -16,7 +16,13 @@ module.exports = {
       black:{
         900:"#0f172a"
       }
-   },
+   }, listStyleType: {
+    none: 'none',
+    disc: 'disc',
+    decimal: 'decimal',
+    square: 'square',
+    roman: 'upper-roman',
+  },
  
    
     extend: {
