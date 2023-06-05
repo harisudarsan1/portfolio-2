@@ -17,7 +17,7 @@ export default ({experience}:Props) => (
         experience.map((item) =>
           <Tab 
           selectedClassName='selectedTab'
-          className=" md:border-l-4 border-l-0 border-bg4 px-5  border-b-2 md:border-b-0 border-solid max-h-max px-2">
+          className=" md:border-l-4 border-l-0 border-bg4 px-5  border-b-2 md:border-b-0 border-solid max-h-max">
             <SmallText text={item.company}></SmallText>
           </Tab>)
       }
