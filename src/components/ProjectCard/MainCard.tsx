@@ -4,28 +4,25 @@ import {motion} from "framer-motion"
 import Image from 'next/image'
 import { classNames } from '@/utils'
 import Link from 'next/link'
+import Github from '../icons/Github'
+import External from '../icons/External'
+import { Project } from '@/utils/types'
 
-type Props = {
-   title: string,
-   details: string,
-   technologies: string[] ,
-   leftSide: boolean,
-   image:string,
-   github:string,
-   liveURL:string,
-}
 
-const MainCard = ({title,details,technologies,leftSide,image,github,liveURL}: Props) => {
+
+const MainCard = ({title,details,technologies,leftSide,image,github,liveURL}: Project) => {
   return (
     <motion.div>
         <div className={classNames(
-            leftSide?"flex-row-reverse":"flex-row","flex relative"
+            leftSide?"flex-row":"flex-row-reverse","flex relative"
         )}>
             <Image 
             height={500}
             width={500}
             
-            className=' -z-10 opacity-20 md:opacity-80 hover:opacity-100  ' 
+            className= {classNames(
+                ' -z-10 opacity-20 absolute h-full w-[60%] md:opacity-80 hover:opacity-100  ', leftSide?"right-0":"left-0"
+            )} 
             alt='projectImage' 
             src={"/projects/"+image}>
 
@@ -37,10 +34,10 @@ const MainCard = ({title,details,technologies,leftSide,image,github,liveURL}: Pr
 
         )}>
             <SmallText text='featured project'></SmallText>
-            <LargeText text={title}></LargeText>
+            <LargeText className=' md:text-5xl' text={title}></LargeText>
 
             <div className={classNames(
-                "bg-bg1 px-6 py-4 flex min-w-[70%] overflow-visible ",leftSide?" justify-start ":" justify-end",
+                "bg-bg1 px-6 py-4 flex min-w-[70%] overflow-visible relative max-w-[500px] ",leftSide?" justify-start ":" justify-end",
             )}>
                 <SmallerText text={details}></SmallerText>
             </div>
@@ -55,10 +52,10 @@ const MainCard = ({title,details,technologies,leftSide,image,github,liveURL}: Pr
             }
             </div>
             <div className={classNames(
-                leftSide?"justify-start":"justify-end","flex gap-3"
+                leftSide?"justify-start":"justify-end","flex gap-3 text-sm"
             )}>
-               <Link href={github}><span>github</span></Link> 
-               <Link href={liveURL}><span>link</span></Link> 
+               <Link href={github}><Github></Github></Link> 
+               <Link href={liveURL}><External></External></Link> 
             </div>
 
 

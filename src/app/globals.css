@@ -17,3 +17,14 @@
     border-left: 0px;
   }
 }
+
+.emailText{
+  writing-mode: vertical-lr;
+
+}
+
+li{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

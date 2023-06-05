@@ -1,13 +1,8 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { SmallText, SmallerText } from '@/components/texts'
+import { workExperience } from '@/utils/types';
+import TriangleSVG from './icons/TriangleSVG';
 
-type workExperience = {
-  role: string,
-  company: string,
-  timeline: string,
-  details?: string[],
-  url?: string,
-}
 type Props = {
     experience:workExperience[]
 }
@@ -46,7 +41,7 @@ export default ({experience}:Props) => (
             <ul className='flex flex-col gap-2 list-inside list-square'>
               {
                 item.details?.map((d) =>
-                  <li>   <SmallerText text={d}></SmallerText></li>
+                  <li> <TriangleSVG></TriangleSVG>  <SmallerText text={d}></SmallerText></li>
                 )
               }
             </ul>

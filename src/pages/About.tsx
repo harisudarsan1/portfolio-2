@@ -1,8 +1,9 @@
 import React from 'react'
-import { motion } from "framer-motion"
+
 import { SmallerText, LargeText } from '@/components/texts'
 import Image from 'next/image'
 import Title from '@/components/Title'
+import TriangleSVG from '@/components/icons/TriangleSVG'
 
 type Props = {}
 
@@ -14,23 +15,9 @@ const about = ["Hello! My name is Brittany and I enjoy creating things that live
 
 const About = (props: Props) => {
     return (
-        <motion.div
+        <div
             className='flex flex-col gap-6 basis-2/3'
-            initial={{
-                opacity: 0,
-                y: 20
-            }}
-            viewport={{ once: false }}
-            animate={{
-                opacity: 1,
-                y: 0,
-
-                transition: {
-                    staggerChildren: 0.2,
-                    type: "spring",
-                    stiffness: 100
-                }
-            }}
+        
         >
             {about.map((item) =>
                 <SmallerText className=' text-lg' text={item}></SmallerText>
@@ -38,18 +25,18 @@ const About = (props: Props) => {
 
             <div className='flex gap-20 justify-start items-start list-square'>
                 <ul>
-                    <li>NextJs</li>
-                    <li>Express</li>
-                    <li>trpc</li>
+                    <li > <TriangleSVG></TriangleSVG> NextJs</li>
+                    <li > <TriangleSVG></TriangleSVG> Express</li>
+                    <li > <TriangleSVG></TriangleSVG> trpc</li>
                 </ul>
                 <ul>
-                    <li>Tailwind</li>
-                    <li>ReactJs</li>
-                    <li>Typescript</li>
+                    <li> <TriangleSVG></TriangleSVG> Tailwind</li>
+                    <li> <TriangleSVG></TriangleSVG> ReactJs</li>
+                    <li> <TriangleSVG></TriangleSVG> Typescript</li>
                 </ul>
 
             </div>
-        </motion.div>
+        </div>
     )
 }
 
