@@ -16,13 +16,13 @@ const Projects = () => {
         className='flex flex-col gap-28'
       >
         {
-          projects.map((project) =>
+          projects.map((project, index) =>
 
             <MainCard
               title={project.title}
               details={project.details}
               technologies={project.technologies}
-              leftSide={project.leftSide}
+              leftSide={index % 2 === 0 ? true : false}
               image={project.image}
               github={project.github}
               liveURL={project.liveURL}
