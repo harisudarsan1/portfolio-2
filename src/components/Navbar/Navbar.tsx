@@ -21,10 +21,11 @@ function Navbar({ }: Props) {
         <Link className='' href="/#experience">Experience</Link>
         <Link className='' href="/#work">Work</Link>
         <Link className='' href="/#contact">contact</Link>
-        <Button
-          className='text-lg px-4 py-1'
-          text='resume'
-        ></Button>
+        <a download href='/resume1.pdf'>
+          <Button
+            className='text-lg px-4 py-1'
+            text='resume'
+          ></Button> </a>
 
 
       </div>
