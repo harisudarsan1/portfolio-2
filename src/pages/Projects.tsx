@@ -19,6 +19,7 @@ const Projects = () => {
           projects.map((project, index) =>
 
             <MainCard
+              key={index + 1}
               title={project.title}
               details={project.details}
               technologies={project.technologies}

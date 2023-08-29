@@ -1,6 +1,5 @@
 import React from 'react'
 import { LargeText, SmallerText, SmallText } from '../texts'
-import { motion } from "framer-motion"
 import Image from 'next/image'
 import { classNames } from '@/utils'
 import Link from 'next/link'
@@ -11,7 +10,7 @@ import { Project } from '@/utils/types'
 
 const MainCard = ({ title, details, technologies, leftSide, image, github, liveURL }: Project) => {
     return (
-        <motion.div>
+        <div>
             <div className={classNames(
                 leftSide ? "flex-row" : "flex-row-reverse", "flex relative"
             )}>
@@ -63,7 +62,7 @@ const MainCard = ({ title, details, technologies, leftSide, image, github, liveU
 
 
             </div>
-        </motion.div>
+        </div>
     )
 }
 

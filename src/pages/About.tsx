@@ -19,8 +19,8 @@ const About = () => {
             id='about'
 
         >
-            {about.map((item) =>
-                <SmallerText className=' text-lg' text={item}></SmallerText>
+            {about.map((item, index) =>
+                <SmallerText key={index + 1} className=' text-lg' text={item}></SmallerText>
             )}
 
             <div className='flex gap-20 justify-start items-start list-square'>

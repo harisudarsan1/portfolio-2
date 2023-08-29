@@ -1,22 +1,10 @@
 "use client";
 import React from 'react'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react';
 import Sidebar from './Sidebar';
 import Button from '../Button';
 
-function Path(props: Object) {
-  return (
-    <motion.path
-      fill="transparent"
-      strokeWidth="2"
-      stroke="black"
-      strokeLinecap="round"
-      {...props}
-    ></motion.path>
-  );
-}
 
 
 type Props = {}
