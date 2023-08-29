@@ -17,7 +17,7 @@ const Card = (props: Otherprojects) => {
       <SmallerText text={props.details}></SmallerText>
       <div className=' py-3 flex justify-start gap-3 mb-2 mt-auto'>
         {
-          props.technologies.map((item) => <p className='text-sm'>{item}</p>)
+          props.technologies.map((item, index) => <p key={index + 1} className='text-sm'>{item}</p>)
         }
       </div>
     </div>

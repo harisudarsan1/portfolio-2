@@ -46,7 +46,7 @@ const MainCard = ({ title, details, technologies, leftSide, image, github, liveU
                     )}>
 
                         {
-                            technologies.map((item) => <SmallText className=' text-sm' text={item}></SmallText>)
+                            technologies.map((item, index) => <SmallText key={index + 1} className=' text-sm' text={item}></SmallText>)
                         }
                     </div>
                     <div className={classNames(
