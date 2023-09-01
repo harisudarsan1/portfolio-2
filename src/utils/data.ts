@@ -7,7 +7,11 @@ Iam a full stack developer. Opensource enthusiast seeks to contribute to opensou
 `
 
 export const AboutContent = `
-Hello! My name is Harisudarsan. I started with web  development
+Hello! My name is Harisudarsan. I started with my programming journey with full stack web development and started to enjoy coding and got interest in CNCF and 
+opensource community and started my contribution to opensource and build CLI apps. Learning kubernetes and OS concepts.
+
+I started preferring simplicity throughout my journey. So I travelled to from windows to popos to manjaro to Arch. I use arch btw and similarly 
+shifted from vscode to sublime to nvim. The UNIX philosophy and golang made  me to think about being simple.  
 `
 
 
