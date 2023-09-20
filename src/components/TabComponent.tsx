@@ -24,7 +24,7 @@ function Experience({ experience }: Props) {
             experience.map((item, index) =>
               <Tab
                 key={index + 1}
-                className={({ selected }) => classNames(" md:border-l-4 border-l-0 border-bg4 px-5  border-b-2 md:border-b-0 border-solid max-h-max selection:border-bg4", selected ? "border-l-black-900" : "")}>
+                className={({ selected }) => classNames("  outline-0 md:border-l-4 border-l-0 border-bg4 px-5  border-b-2 md:border-b-0 border-solid max-h-max selection:border-bg4", selected ? "border-l-black-900" : "")}>
                 <SmallText text={item.company}></SmallText>
               </Tab>)
           }
