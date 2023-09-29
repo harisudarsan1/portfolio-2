@@ -1,4 +1,5 @@
 // import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+"use client"
 import { SmallText, SmallerText } from '@/components/texts'
 import { workExperience } from '@/utils/types';
 import TriangleSVG from './icons/TriangleSVG';

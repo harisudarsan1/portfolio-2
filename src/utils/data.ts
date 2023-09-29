@@ -41,8 +41,8 @@ export const experience: workExperience[] = [
     company: "Dodao",
     timeline: "august 2022- present",
     details: [
-      `Working a chatbot using langchain pinecone and openai`,
-      `Worked on creating many web3 courses like solidity course, course on AAVE`,
+      `Worked on a chatbot using langchain pinecone and openai`,
+      `Worked on creating many courses on web3 like Solidity, AAVE, Uniswap, ENS , etc. `,
       `Contributed to homepage website of Dodao`,
     ]
   },
@@ -51,6 +51,13 @@ export const experience: workExperience[] = [
 
 
 export const otherProjectsData: Otherprojects[] = [
+  {
+    title: "launcher",
+    details: "A simple app launcher made with bash and alacritty",
+    github: "https://github.com/HARI-124/StringerCLI",
+    cta: "/",
+    technologies: ["Bash scripting"]
+  },
   {
     title: "CLI",
     details: "A simple CLI app built with goland and cobra",

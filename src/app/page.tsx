@@ -1,4 +1,3 @@
-"use client";
 import Image from 'next/image'
 import Hero from '@/pages/Hero'
 import AboutPage from '@/pages/About'
@@ -22,7 +21,7 @@ export default function Home() {
       <Contact></Contact>
       <SocialIcons></SocialIcons>
       <Footer></Footer>
-  
+
       <Email></Email>
     </div>
   )
