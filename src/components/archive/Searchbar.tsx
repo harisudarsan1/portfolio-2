@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-type Props = {}
+type Props = {};
 
 const Searchbar = (props: Props) => {
   return (
-    <div><input type='search' className='' /></div>
-  )
-}
+    <div>
+      <input type="search" className="" />
+    </div>
+  );
+};
 
-export default Searchbar
+export default Searchbar;

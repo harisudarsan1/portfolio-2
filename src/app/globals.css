@@ -2,47 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root,body,html{
+:root,
+body,
+html {
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.selectedTab{
+.selectedTab {
   border-left: 4px black solid;
 }
-@media screen and (max-width:800px) {
-  .selectedTab{
+@media screen and (max-width: 800px) {
+  .selectedTab {
     border-bottom: 4px black solid;
     border-left: 0px;
   }
 }
 
-.emailText{
+.emailText {
   writing-mode: vertical-lr;
-
 }
 
-li{
+li {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
- .blog h1 {
-
+.blog h1 {
   font-size: 60px;
   text-align: center;
 
   font-weight: 800;
   padding: 30px;
-
-
 }
 
-
- .blog h2 {
-
+.blog h2 {
   font-size: 50px;
   text-align: center;
   font-weight: 600;
@@ -50,31 +46,26 @@ li{
   padding: 20px;
 }
 
-
- .blog h4 {
-
+.blog h4 {
   font-size: 30px;
   font-weight: 400;
 
   padding: 10px;
 }
- .blog h3 {
-
+.blog h3 {
   font-size: 40px;
   font-weight: 500;
 
   padding: 20px;
 }
 
-.blog p ,.blog ul, .blog li{
+.blog p,
+.blog ul,
+.blog li {
   font-size: 20px;
-   list-style-type: circle;
+  list-style-type: circle;
 }
 
-.blog{
+.blog {
   margin: 20px 10%;
-  
 }
-
-
-

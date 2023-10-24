@@ -1,28 +1,26 @@
-
-import Navbar from '@/components/Navbar/Navbar'
-import './globals.css'
-import {Inter} from "next/font/google"
+import Navbar from "@/components/Navbar/Navbar";
+import "./globals.css";
+import { Inter } from "next/font/google";
 export const metadata = {
-  title: 'Harisudarsan',
-  description: 'personal portfolio website of harisudarsan',
-}
+  title: "Harisudarsan",
+  description: "personal portfolio website of harisudarsan",
+};
 
 const inter = Inter({
-  subsets:['latin']
-})
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={` bg-bg3 text-black-900 ${inter.className} `} >
+      <body className={` bg-bg3 text-black-900 ${inter.className} `}>
         <Navbar></Navbar>
         {children}
-        
-        </body>
+      </body>
     </html>
-  )
+  );
 }

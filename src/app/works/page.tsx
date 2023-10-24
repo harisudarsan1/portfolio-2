@@ -1,15 +1,11 @@
-import React from 'react'
-import Work from '@/pages/Work'
-import Github from '@/components/icons/Github'
+import React from "react";
+import Work from "@/pages/Work";
+import Github from "@/components/icons/Github";
 
-type Props = {}
+type Props = {};
 
 const page = (props: Props) => {
-  return (
-    <div>
+  return <div></div>;
+};
 
-    </div>
-  )
-}
-
-export default page
+export default page;

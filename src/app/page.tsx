@@ -1,18 +1,16 @@
-import Image from 'next/image'
-import Hero from '@/pages/Hero'
-import AboutPage from '@/pages/About'
-import Work from '@/pages/Work';
-import Projects from '@/pages/Projects';
-import OtherProjects from '@/pages/OtherProjects';
-import Contact from '@/pages/Contact';
-import Footer from '@/pages/Footer';
-import SocialIcons from '@/components/SocialIcons';
-import Email from '@/components/Email';
+import Hero from "@/pages/Hero";
+import AboutPage from "@/pages/About";
+import Work from "@/pages/Work";
+import Projects from "@/pages/Projects";
+import OtherProjects from "@/pages/OtherProjects";
+import Contact from "@/pages/Contact";
+import Footer from "@/pages/Footer";
+import SocialIcons from "@/components/SocialIcons";
+import Email from "@/components/Email";
 
 export default function Home() {
   return (
-
-    <div className=''>
+    <div className="">
       <Hero></Hero>
       <AboutPage></AboutPage>
       <Work></Work>
@@ -24,5 +22,5 @@ export default function Home() {
 
       <Email></Email>
     </div>
-  )
+  );
 }

@@ -1,4 +1,3 @@
-
 My name is Harisudarsan
 
 glih;ojolih
@@ -8,20 +7,12 @@ hliuhioulj
 - kugj
 - hbknh
 
-
-
-
-
-
-
-
-~~~golang
+```golang
 dd := 23
 
 fmt.Println("h")
 
-~~~
-
+```
 
 ```c
 #include <stdio.h>
