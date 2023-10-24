@@ -6,7 +6,9 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <Github></Github>
+    <div>
+
+    </div>
   )
 }
 

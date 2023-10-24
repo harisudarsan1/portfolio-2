@@ -17,11 +17,8 @@ function Navbar({ }: Props) {
       <div> <Link className=' text-3xl' href="/">Harisudarsan</Link></div>
 
       <div className=' hidden  md:flex justify-center items-center gap-3'>
-        <Link className='' href="/#about">about</Link>
-        <Link className='' href="/#experience">Experience</Link>
-        <Link className='' href="/#work">Work</Link>
-        <Link className='' href="/#contact">contact</Link>
         <Link className='' href="/archive"> archive </Link>
+        <Link className='' href="/works"> works </Link>
         <a download href='/resume1.pdf'>
           <Button
             className='text-lg px-4 py-1'
