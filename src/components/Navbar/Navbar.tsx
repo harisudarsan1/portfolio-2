@@ -21,6 +21,7 @@ function Navbar({ }: Props) {
         <Link className='' href="/#experience">Experience</Link>
         <Link className='' href="/#work">Work</Link>
         <Link className='' href="/#contact">contact</Link>
+        <Link className='' href="/archive"> archive </Link>
         <a download href='/resume1.pdf'>
           <Button
             className='text-lg px-4 py-1'

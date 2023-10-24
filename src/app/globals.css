@@ -28,3 +28,53 @@ li{
   align-items: center;
   gap: 8px;
 }
+
+ .blog h1 {
+
+  font-size: 60px;
+  text-align: center;
+
+  font-weight: 800;
+  padding: 30px;
+
+
+}
+
+
+ .blog h2 {
+
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+
+  padding: 20px;
+}
+
+
+ .blog h4 {
+
+  font-size: 30px;
+  font-weight: 400;
+
+  padding: 10px;
+}
+ .blog h3 {
+
+  font-size: 40px;
+  font-weight: 500;
+
+  padding: 20px;
+}
+
+.blog p ,.blog ul, .blog li{
+  font-size: 20px;
+   list-style-type: circle;
+}
+
+.blog{
+  margin: 20px 10%;
+  
+}
+
+
+

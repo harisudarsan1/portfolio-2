@@ -127,3 +127,25 @@ export const projects: Project[] = [
   },
 
 ]
+
+export const blogs = [
+  {
+    title: "File IO model in linux",
+    slag: "fileio",
+    date: "22 oct 2023"
+  },
+  {
+
+    title: "Writing a malloc in C",
+    slag: "writing-malloc",
+    date: "1 Nov 2023"
+  },
+  {
+    title: "All about Processes ",
+    slag: "processes",
+    date: "11 oct 2023",
+  }
+
+]
+
+
