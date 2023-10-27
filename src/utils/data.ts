@@ -132,5 +132,9 @@ export const blogs = [
     title: "All about Processes ",
     slag: "processes",
     date: "11 oct 2023",
-  },
+  }, {
+    title: "Tracing function arguments using BPF uprobes in go",
+    slag: "uprobes",
+    date: "27 oct 2023",
+  }
 ];
