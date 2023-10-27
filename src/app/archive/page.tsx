@@ -20,8 +20,7 @@ const page = (props: Props) => {
             className="text-left"
             href={"archive/" + blog.slag}
           >
-            {index + 1 + " "}
-            <SmallText text={blog.title}></SmallText>
+            <SmallText text={index + 1 + " " + blog.title}></SmallText>
           </Link>
         ))}
       </div>

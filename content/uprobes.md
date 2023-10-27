@@ -80,7 +80,7 @@ The diagram below shows how the binary is modified by the Linux kernel with an u
 
 ### High level view of tracing 
 
-![[Pasted image 20231027171929.png]]
+![](https://blog.px.dev/static/9f8b26f88f9b132440ef1b9d48b5a341/app-tracer.svg)
 
 The logic is after the soft interrupt the bpf code is triggered by the uprobe hook which executes the bpf program after the bpf program writes the data to the `perf buffer` which is a mapping used for transferring data between userSpace and kernel space.
 
@@ -190,7 +190,7 @@ func main() {
 }
 ```
 
-Explanation:
+### Explanation:
 	The BPF program basically  extracts values stores in the `ax` register using this struct `struct pt_regs` .  `trace.perf_submit(ctx, &val, sizeof(val))` this line will submit the perf event using the trace object.
 	In the `init()` we are asking for a binary as our paramet in this case our server's binary should be given. Using `gobpf/bcc` package we are attaching loading the `uprobe` by specifying the function name "computeEcalled". 
 	
@@ -205,3 +205,11 @@ A perf map is created to collect and transmit data from the eBPF program to user
     
 - **Termination**: The program can be terminated gracefully by sending a Ctrl-C signal. When this happens, the code prints a termination message and exits.
 	
+
+
+### References
+
+- https://blog.px.dev/ebpf-function-tracing/
+
+
+
