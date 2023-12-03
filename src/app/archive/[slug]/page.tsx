@@ -12,7 +12,7 @@ const Post = async ({ params }: { params: { slug: string } }) => {
   });
 
   const { data, content } = matter(BlogContent);
-  console.log(data);
+  
   return (
     <div className="blog">
       <LargeText text={data.title} />
