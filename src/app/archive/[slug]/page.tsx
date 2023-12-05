@@ -4,15 +4,15 @@ import matter from "gray-matter";
 import { LargeText } from "@/components/texts";
 import Markdown from "markdown-to-jsx";
 
-
 const CodeComponent = ({ children, ...props }) => {
-
-  return <div className="inline-block px-2 py-1 bg-bg1 max-w-screen-lg">
-    <code className="bg-black-900 max-w-min text-bg1  flex" {...props}>{children}</code>
-
-  </div>
-
-}
+  return (
+    <div className="inline-block px-2 py-1 bg-bg1 max-w-screen-lg">
+      <code className="bg-black-900 max-w-min text-bg1  flex" {...props}>
+        {children}
+      </code>
+    </div>
+  );
+};
 
 const Post = async ({ params }: { params: { slug: string } }) => {
   const blog = params.slug;
@@ -33,11 +33,12 @@ const Post = async ({ params }: { params: { slug: string } }) => {
               component: LargeText,
             },
             code: {
-              component: CodeComponent
-            }
-          }
+              component: CodeComponent,
+            },
+          },
         }}
-      />     </div>
+      />{" "}
+    </div>
   );
 };
 
