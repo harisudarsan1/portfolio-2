@@ -1,9 +1,7 @@
 import React from "react";
 import fs from "fs";
 import matter from "gray-matter";
-import ReactMarkdown from "react-markdown";
 import { LargeText } from "@/components/texts";
-import remarkGfm from "remark-gfm";
 import Markdown from "markdown-to-jsx";
 
 
