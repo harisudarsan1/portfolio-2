@@ -30,7 +30,7 @@ export function LargeText({ text, className }: props) {
     <h2
       className={classNames(
         inconsolota.className,
-        `text-2xl whitespace-nowrap md:text-4xl font-bold lg:text-5xl `,
+        `text-2xl whitespace-nowrap md:text-4xl font-bold lg:text-5xl text-black-900 `,
         className ?? "",
       )}
     >
