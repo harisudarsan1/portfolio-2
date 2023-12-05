@@ -21,7 +21,7 @@ const Post = async ({ params }: { params: { slug: string } }) => {
   });
 
   const { data, content } = matter(BlogContent);
-  console.log(data);
+  
   return (
     <div className="blog max-w-screen-lg">
       <LargeText text={data.title} />
