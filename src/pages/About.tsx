@@ -18,7 +18,7 @@ const About = () => {
           </li>
           <li>
             {" "}
-            <TriangleSVG></TriangleSVG> NodeJs
+            <TriangleSVG></TriangleSVG> nodeJs
           </li>
           <li>
             {" "}
